@@ -93,8 +93,8 @@
                     	<div class="er_m">
                             <i>&nbsp;</i>
                             <ul>
-                                <li><a href="">公司活动</a></li>
-                                <li><a href="">行业新闻</a></li>
+                                <li><a href="news.html">公司活动</a></li>
+                                <li><a href="news.html">行业新闻</a></li>
                             </ul>
                         </div>
                     </div>
@@ -105,8 +105,8 @@
                     	<div class="er_m">
                             <i>&nbsp;</i>
                             <ul>
-                                <li><a href="">联系我们</a></li>
-                                <li><a href="">客户留言</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                                <li><a href="contact.html">客户留言</a></li>
                             </ul>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
 <!--头部-->
 <!--幻灯片-->
 <div class="banner_s"><img src="Assets/upload/banner_a.jpg" alt=""/></div>
-<div class="pst_bg">
+<div class="pst_bg" name="contain">
 	<div class="pst">
     	您当前的位置：
         <a href="">代理产品</a>>
@@ -132,13 +132,15 @@
             <i>&nbsp;</i>
         </div>
         <ul class="s_nav">
-        	<li class="now"><a href="">推荐产品</a></li>
-            <li><a href="">消费类电子</a></li>
-            <li><a href="">移动通讯电子</a></li>
-            <li><a href="">工业电子</a></li>
+        	<li class="now" id="tuijian"><a href="#contain">推荐产品</a></li>
+            <li id="xiaofei"><a href="#contain">消费类电子</a></li>
+            <li id="yidong"><a href="#contain">移动通讯电子</a></li>
+            <li id="gongye"><a href="#contain">工业电子</a></li>
         </ul>
     </div>
-    <div class="scd_r">
+    <div class="content">
+    <!--推荐产品-->
+    <div class="scd_r show" id="scd_r_tuijian">
     	<div class="r_name"><span>推荐产品</span></div>
         <div class="pro clearfix">
         	<dl class="clearfix">
@@ -174,6 +176,121 @@
                 </dd>
             </dl>
         </div>
+    </div>
+    <!--消费类电子-->
+    <div class="scd_r hide" id="scd_r_xiaofei">
+        <div class="r_name"><span>消费类电子</span></div>
+        <div class="pro clearfix">
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic5.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic7.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic5.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic7.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!--移动通讯电子-->
+    <div class="scd_r hide" id="scd_r_yidong">
+        <div class="r_name"><span>移动通讯电子</span></div>
+        <div class="pro clearfix">
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic5.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic7.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic5.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic7.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!--工业电子-->
+    <div class="scd_r hide" id="scd_r_gongye">
+        <div class="r_name"><span>工业电子</span></div>
+        <div class="pro clearfix">
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic5.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic7.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic5.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href=""><img src="Assets/upload/pic7.jpg" alt=""/></a></dt>
+                <dd>
+                    <div class="title"><a href="">Amlogic 8726-MXL处理器</a></div>
+                    <div class="des">AML8726-MX是双核的A9CPU，是支持1.5G，同时是双核Mali400的GPU，频率可以跑到400兆，里面包含......</div>
+                    <a href="" class="more">+查看详情</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
     </div>
 </div>
 <div class="fn_bg">

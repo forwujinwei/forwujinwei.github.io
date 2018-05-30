@@ -66,3 +66,9 @@ abbr, acronym {
 	overflow: hidden;
 }
 /*间隙层结束*/
+.hide{
+	display:none;
+}
+.show{
+	display: block;
+}

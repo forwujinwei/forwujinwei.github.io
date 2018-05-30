@@ -22,6 +22,22 @@ $(function(){
 		var url =$(this).children("img").attr("src");
 		$(".i_mc dt a").find("img").attr("src",url); 
 	});
+	$('.s_nav li').mouseup(function(){
+
+		var li_id = $(this).attr('id');
+		$(this).prevAll().removeClass('now');
+		$(this).addClass('now');
+		var contentList = $('.content').children('.scd_r');
+        $.each(contentList,function () {
+            if($(this).attr('id') == ("scd_r_"+li_id)){
+                $(this).removeClass('hide');
+                $(this).addClass('show');
+            }else{
+                $(this).removeClass('show');
+                $(this).addClass('hide');
+            }
+        })
+	});
 	
 	$('.join .j_c tr:nth-child(2n+1)').children('td').css('background','#DBE7F3');
 	
