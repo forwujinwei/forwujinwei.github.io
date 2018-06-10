@@ -72,3 +72,7 @@ abbr, acronym {
 .show{
 	display: block;
 }
+
+.show-inline{
+	display: inline-block;
+}

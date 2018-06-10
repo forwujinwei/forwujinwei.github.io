@@ -25,7 +25,7 @@ $(function(){
 	$('.s_nav li').mouseup(function(){
 
 		var li_id = $(this).attr('id');
-		$(this).prevAll().removeClass('now');
+		$(this).siblings().removeClass('now');
 		$(this).addClass('now');
 		var contentList = $('.content').children('.scd_r');
         $.each(contentList,function () {
@@ -37,6 +37,21 @@ $(function(){
                 $(this).addClass('hide');
             }
         })
+		/*修改当前路径 start*/
+        var routList = $('.pst').children('#one-route').nextAll();
+        $.each(routList,function () {
+
+            if($(this).attr('id') == ("pst-"+li_id)){
+                $(this).removeClass('hide');
+                $(this).addClass('show-inline');
+
+            }else{
+                $(this).removeClass('show-inline');
+                $(this).addClass('hide');
+            }
+        })
+
+        /*修改当前路径 end*/
 	});
 	
 	$('.join .j_c tr:nth-child(2n+1)').children('td').css('background','#DBE7F3');
