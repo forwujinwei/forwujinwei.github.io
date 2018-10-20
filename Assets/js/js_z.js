@@ -6,7 +6,7 @@ $(function(){
 		$(this).siblings('ul').slideToggle();
 	});
 	
-	$('.i_ma li:nth-child(3n)').css('margin-right',0);
+	$('.i_ma li:nth-child(4n)').css('margin-right',0);
 	$('.pro dl:nth-child(2n)').css('margin-right',0);
 	$('.cotnact ul li:nth-child(2n)').css('margin-right',0);
 	$('.friend ul li:nth-child(4n)').css('margin-right',0);
