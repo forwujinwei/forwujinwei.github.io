@@ -211,7 +211,21 @@ a:hover{ color:#FFBF00;}
 .book_m ul li .name i{ display:block; text-align:right; font-style:normal; color:#F00; line-height:20px;}
 .book_m ul li textarea{ width:580px; height:194px; border:1px solid #ddd; line-height:175%;}
 .book_m ul li input[type="submit"]{ width:100px; text-align:center; color:#fff; cursor:pointer; background-color:#0065E9; color:#FFFFFF; }
-
+.tooltip {
+    position: absolute;
+    width:200px;
+    display: none;
+    z-index: 9900000;
+    background:#F2F2F2;
+    outline: none;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
 
 
 

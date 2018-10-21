@@ -22,6 +22,19 @@ $(function(){
 		var url =$(this).children("img").attr("src");
 		$(".i_mc dt a").find("img").attr("src",url); 
 	});
+    /*产品添加鼠标移入事件*/
+    $('.content .scd_r .pro dl dd a').mouseover(function(event){
+        $(this).removeAttr("href");
+        var des = $(this).siblings('div .des');
+        var tooltipHtml = "<div id='tooltip' class='tooltip'>"+des.text()+"</div>";
+        $(this).append(tooltipHtml); //添加到页面中
+        $("#tooltip").css({
+            "top": (event.pageY) + "px",
+            "left": (event.pageX) + "px"  //紧跟在内容的后面
+        }).show("fast"); //设置提示框的坐标，并显示
+    }).mouseout(function(){
+        $("#tooltip").remove();
+    });
 	$('.s_nav li').mouseup(function(){
 
 		var li_id = $(this).attr('id');
